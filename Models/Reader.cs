@@ -4,8 +4,7 @@ namespace lab3.Models
 {
     public class Reader
     {
-        [BsonId]
-        [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        [BsonId,BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string Id { get; set; } = null!;
         public string Surname { get; set; } = null!;
         public string Name { get; set; } = null!;
